@@ -1,5 +1,7 @@
 <html>
 <head>
+	<script type="text/javascript" src="script.js"></script>
+
 	<title>OBIE: Oblique Strategizer</title>
 </head>
 <body>
@@ -8,20 +10,20 @@
 	<div> Are you feeling creative? </div>
 
 
-<button onclick="ResponseY()">Yes</button>
-<button onclick="ResponseN()">No</button>
 
+<button onclick="ResponseY()">Yes</button>
+<!-- <button onclick="ResponseN()">No</button>
+ -->
+
+
+
+
+<input type="button" id="btnSearch" value="No" onclick="GetValue();" />
+
+<p id="message" ></p>
 <p id="demo"></p>
 
-<script>
-function ResponseY() {
-    document.getElementById("demo").innerHTML = "Okay then, have a nice day.";
-}
-function ResponseN() {
-    document.getElementById("demo").innerHTML = "Have you gone swimming recently?(This would be a random JS generated question)";
-}
 
-</script>
 
 </body>
 </html>
